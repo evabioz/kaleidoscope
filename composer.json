@@ -1,0 +1,41 @@
+{
+    "name": "evabioz/kaleidoscope",
+    "description": "",
+    "authors": [
+        {
+            "name": "evabioz",
+            "email": "evabioz@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "~5",
+        "illuminate/database": "~5",
+        "illuminate/validation": "~5",
+        "guzzlehttp/guzzle": "~6",
+        "aws/aws-sdk-php": "~3",
+        "intervention/image": "~2.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0",
+        "phpspec/phpspec": "~2.1",
+        "orchestra/testbench": "~3.0",
+        "mockery/mockery": "^0.9.4",
+        "squizlabs/php_codesniffer": "^2.4",
+        "jakub-onderka/php-parallel-lint": "^0.9.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kaleidoscope\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kaleidoscope\\Tests\\": "tests"
+        }
+    },
+    "minimum-stability": "stable"
+}
